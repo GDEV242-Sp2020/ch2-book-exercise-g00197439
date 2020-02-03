@@ -24,21 +24,21 @@ class Book
 
     //Question 2.83
     public String getAuthor() {
-        return bookAuthor;
+        return author;
     }
     
     //Question 2.83
     public String getTitle() {
-        return bookTitle;
+        return title;
     }
     
     //Question 2.84
     public void printAuthor() {
-        System.out.println(bookAuthor);
+        System.out.println(author);
     }
     
     //Question 2.84
     public void printTitle() {
-        System.out.println(bookTitle);
+        System.out.println(title);
     }
 }
