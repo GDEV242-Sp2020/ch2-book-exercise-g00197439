@@ -60,13 +60,18 @@ class Book
     public void printDetails() {
         System.out.println("Title: " + title + ", Author: " + author +
             ", Pages: " + pages);
-        if(refNumber.length() != 0) {
+        if(refNumber.length() != 0) { //Question 2.89
             System.out.println(", Reference Number: " + refNumber);
-        }
+        } else {
+            System.out.println(", Reference Number: ZZZ");
     }
     
-    //Question 2.88
+    //Question 2.88 & 2.90
     public void setRefNumber(String ref) {
-        refNumber = ref;
+        if(ref.length() >= 3) {
+            refNumber = ref;
+        } else {
+            System.out.println("Error. Reference number must be at least three characters.");
+        }
     }
 }
