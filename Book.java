@@ -48,4 +48,9 @@ class Book
     public void printTitle() {
         System.out.println(title);
     }
+    
+    //Question 2.87
+    public void printDetails() {
+        System.out.println("Title: " + title + ", Author: " + author +
+            ", Pages: " + pages;
 }
